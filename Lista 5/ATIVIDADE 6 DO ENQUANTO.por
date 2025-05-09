@@ -1,27 +1,26 @@
 programa
 {
-	inteiro a, b, incre, c, sequencia
-	
+	inteiro sort = 0, a, mai = 0, div = 0
 	funcao inicio()
 	{
-		escreva("Digite o primeiro número: ")
-		leia(a)
-		escreva("\n")
-		
-		escreva("Digite o último número: ")
-		leia(b)
-		escreva("\n")
-		
-		escreva("Digite o valor do incremento: ")
-		leia(incre)
-		escreva("\n")
-
-		enquanto( a + incre < b)
+		enquanto( sort <= 10)
 		{
-		escreva(a, "  ")
-	 	a = a + incre  
+			a = sorteia(0,10)
+			escreva(a, " ")
+			sort = sort + 1
+			se( a > 5)
+			{
+				mai = mai + 1 
+			}
+		     se(a!= 0 e (a % 3) == 0)
+		     {
+				div = div + 1
+		     }
 		
 		}
+	          escreva("\nA quantidade de números maior que 5: ", mai)
+	          escreva("\nA quantidade de números divisível por 3: ", div)
+	
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -29,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 359; 
+ * @POSICAO-CURSOR = 133; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
