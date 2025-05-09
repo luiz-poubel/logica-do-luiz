@@ -1,27 +1,15 @@
 programa
 {
-	inteiro a, b, incre, c, sequencia
-	
+	real a, b, divisao	
 	funcao inicio()
 	{
-		escreva("Digite o primeiro número: ")
+		escreva("quantos reais voce tem:")
 		leia(a)
-		escreva("\n")
-		
-		escreva("Digite o último número: ")
-		leia(b)
-		escreva("\n")
-		
-		escreva("Digite o valor do incremento: ")
-		leia(incre)
-		escreva("\n")
 
-		enquanto( a + incre < b)
-		{
-		escreva(a, "  ")
-	 	a = a + incre  
-		
-		}
+		divisao = a / 3.45
+
+		escreva("voce pode comprar:")
+		escreva(a / 3.45)	
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -29,7 +17,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 359; 
+ * @POSICAO-CURSOR = 124; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
